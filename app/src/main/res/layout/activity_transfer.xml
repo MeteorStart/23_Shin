@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.TransferActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_act_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingBottom="10px"
+        app:tabIndicatorColor="@color/act_main_line"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/act_main_line"
+        app:tabTextColor="@color/black_text_999" />
+
+    <com.xiujichuanmei.a23_haoxin.mvp.view.view.NotSlipViewPager
+        android:id="@+id/vp_act_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

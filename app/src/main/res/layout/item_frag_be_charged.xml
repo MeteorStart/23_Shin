@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 中转活动 待收取Fragment 列表item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:orientation="vertical"
+    android:padding="20px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件编号： "
+            android:textColor="@color/black_text_333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_frag_be_charged_letter_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="26386"
+            android:textColor="@color/black_text_333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_frag_be_charged_letter_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发"
+            android:textColor="@color/black_text_666"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_frag_be_charged_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:drawableLeft="@drawable/icon_wo_zhongzhuanxinjian_shouqu"
+        android:text="省-市-区"
+        android:drawablePadding="10px"
+        android:textColor="@color/yellow_item_shop_type"
+        android:textSize="28px" />
+</LinearLayout>

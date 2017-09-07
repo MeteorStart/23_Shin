@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imv_act_main_login_in_shop_avatar"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    <TextView
+        android:id="@+id/text_act_main_login_in_shop_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="用户名"
+        android:textColor="@color/black_text_333"
+        android:textSize="30px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lay_act_main_login_shop_online_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="50px">
+
+            <TextView
+                android:id="@+id/text_act_main_login_in_shop_online_letters_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/act_main_line"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/text_act_main_login_in_shop_online_letters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="在线信件"
+                android:textColor="@color/black_text_999"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/cut_line" />
+
+        <LinearLayout
+            android:id="@+id/lay_act_main_login_shop_flow_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="50px">
+
+            <TextView
+                android:id="@+id/text_act_main_login_in_shop_flow_letters_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/act_main_line"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/text_act_main_login_in_shop_flow_letters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="流动信件"
+                android:textColor="@color/black_text_999"
+                android:textSize="20px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="54px"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_act_main_login_in_shop_richscan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66px"
+            android:drawableLeft="@drawable/icon_xinjian_erweima"
+            android:drawablePadding="10px"
+            android:text="扫一扫"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/text_act_main_login_in_shop_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:drawableLeft="@drawable/icon_wo_shouye_serch"
+            android:drawablePadding="10px"
+            android:text="搜索"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/text_act_main_login_in_shop_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:drawableLeft="@drawable/icon_wo_shouye_news"
+            android:drawablePadding="10px"
+            android:text="消息"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/text_act_main_login_in_shop_letters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:drawableLeft="@drawable/icon_wo_shouye_zhongzhuanxinjian"
+            android:drawablePadding="10px"
+            android:text="待中转信件"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/text_act_main_login_in_shop_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:drawableLeft="@drawable/icon_wo_shouye_set"
+            android:drawablePadding="10px"
+            android:text="设置"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+    </LinearLayout>
+
+
+</LinearLayout>

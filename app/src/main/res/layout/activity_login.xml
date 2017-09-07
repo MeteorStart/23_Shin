@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.LoginActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:id="@+id/imv_act_login_avatar"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginTop="72px"
+        android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    <TextView
+        android:id="@+id/text_act_login_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px"
+        android:text="登录23号信"
+        android:textColor="@color/black_text_333"
+        android:textSize="30px" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_avt_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:counterOverflowTextAppearance="@style/errorAppearance"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_login_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_shoujihao"
+            android:drawablePadding="20px"
+            android:inputType="phone"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp"
+            app:funcType="canClear" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_avt_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterOverflowTextAppearance="@style/errorAppearance"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableLeft="@drawable/icon_denglu_password"
+            android:drawablePadding="20px"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp"
+            app:eyeClose="@drawable/icon_denglu_mimabukejian"
+            app:eyeOpen="@drawable/icon_denglu_mimakejian"
+            app:funcType="canWatchPwd" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_act_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/select_btn_act_login"
+        android:enabled="false"
+        android:text="登录"
+        android:textColor="@drawable/select_btn_text_color_act_login"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px">
+
+        <TextView
+            android:id="@+id/text_act_login_sing_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:text="注册"
+            android:textColor="@drawable/select_text_color_act_login"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/text_act_login_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="忘记密码"
+            android:textColor="@drawable/select_text_color_act_login"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginRight="36px"
+            android:layout_weight="1.0"
+            android:background="@color/cut_line" />
+
+        <ImageView
+            android:id="@+id/imv_act_login_other_login_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:src="@drawable/icon_denglu_disanfang_qq" />
+
+        <ImageView
+            android:id="@+id/imv_act_login_other_login_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:src="@drawable/icon_denglu_disanfang_weibo" />
+
+        <ImageView
+            android:id="@+id/imv_act_login_other_login_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_denglu_disanfang_weixin" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="36px"
+            android:layout_weight="1.0"
+            android:background="@color/cut_line" />
+    </LinearLayout>
+</LinearLayout>

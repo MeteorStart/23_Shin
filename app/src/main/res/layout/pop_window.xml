@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_btn">
+
+        <Button
+            android:id="@+id/btn_picture_from_libary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:text="从手机选择"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageview_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btn_picture_from_libary"
+            android:background="#f4f4f4" />
+
+        <Button
+            android:id="@+id/btn_picture_from_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_picture_from_libary"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:text="拍照"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_person_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_title"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn">
+
+        <Button
+            android:id="@+id/btn_picture_from_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#00000000"
+            android:text="取消"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

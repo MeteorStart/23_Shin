@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sliding_menu" type="id"/>
+    <item name="rel_act_main_top" type="id"/>
+    <item name="imv_act_main_my" type="id"/>
+    <item name="tab_act_main" type="id"/>
+    <item name="imv_act_main_mes" type="id"/>
+    <item name="vp_act_main" type="id"/>
+
+    <item name="rel_act_main_left_no_login" type="id"/>
+    <item name="rel_act_main_left_login" type="id"/>
+</resources>

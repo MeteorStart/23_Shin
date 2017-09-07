@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.SingInActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:id="@+id/imv_act_sing_in_avatar"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginTop="72px"
+        android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    <TextView
+        android:id="@+id/text_act_sing_in_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px"
+        android:text="注册23号信"
+        android:textColor="@color/black_text_333"
+        android:textSize="30px" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_act_sing_in_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:counterOverflowTextAppearance="@style/errorAppearance">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_sing_in_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_shoujihao"
+            android:drawablePadding="20px"
+            android:inputType="phone"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="11"
+            app:counterOverflowTextAppearance="@style/errorAppearance"
+            app:funcType="canClear" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_act_sing_in_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_sing_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_password"
+            android:drawablePadding="20px"
+            android:inputType="textPassword"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp"
+            app:eyeClose="@drawable/icon_denglu_mimabukejian"
+            app:eyeOpen="@drawable/icon_denglu_mimakejian"
+            app:funcType="canWatchPwd" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+
+        <EditText
+            android:id="@+id/edit_act_sing_in_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_yanzhengma"
+            android:drawablePadding="20px"
+            android:inputType="phone"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp" />
+
+
+        <com.project.lx.baseproject.widget.TimeButton
+            android:id="@+id/btn_act_sing_in_down"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignBottom="@+id/edit_act_sing_in_code"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="18px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/select_btn_act_login"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@drawable/select_btn_text_color_act_login"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_act_sing_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/select_btn_act_login"
+        android:enabled="false"
+        android:text="注册"
+        android:textColor="@drawable/select_btn_text_color_act_login"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_act_sing_in"
+            style="@style/SingInCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_act_sing_in_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="我已阅读并同意《23号信用户协议》"
+            android:textColor="@color/black_text_999"
+            android:textSize="24px" />
+    </LinearLayout>
+
+</LinearLayout>

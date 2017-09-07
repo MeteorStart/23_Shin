@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/rel_act_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_f8">
+
+        <ImageView
+            android:id="@id/imv_act_main_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imv_act_main_my"
+            android:layout_alignTop="@+id/imv_act_main_my"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:orientation="horizontal">
+
+            <com.project.lx.baseproject.widget.UnderLineBtn
+                android:id="@+id/ulbtn_act_main_letter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                app:checkedColor="@color/act_main_line"
+                app:lineColor="@color/act_main_line"
+                app:unLineColor="@color/act_main_unline"
+                app:isChecked="true"
+                app:lineHeight="3dp"
+                app:text="信件"
+                app:textSize="18sp"
+                app:unCheckedColor="@color/black" />
+
+            <com.project.lx.baseproject.widget.UnderLineBtn
+                android:id="@+id/ulbtn_act_main_deman"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                app:checkedColor="@color/act_main_line"
+                app:lineColor="@color/act_main_line"
+                app:unLineColor="@color/act_main_unline"
+                app:isChecked="false"
+                app:lineHeight="3dp"
+                app:text="需求"
+                app:textSize="18sp"
+                app:unCheckedColor="@color/black" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@id/imv_act_main_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rel_act_main_top"
+        android:background="#bbbbbb" />
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@id/rel_act_main_top"
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.baidu.mapapi.map.MapView>
+
+    <Button
+        android:id="@+id/btn_loc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:text="定位"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

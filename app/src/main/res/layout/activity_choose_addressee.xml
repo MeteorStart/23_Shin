@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.ChooseRecipientActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/act_top" />
+
+        <TextView
+            android:id="@+id/tv_act_choose_recipient_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/act_main_line"
+            android:text="确定"
+            android:padding="20px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_act_choose_recipient_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/white_f8"
+                    android:gravity="center_vertical"
+                    android:text="最近联系人"
+                    android:textColor="@color/black_text_999"
+                    android:textSize="26px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_act_choose_recipient_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_choose_recipient_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ac_choose_addressee_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/white_f8"
+                    android:gravity="center_vertical"
+                    android:text="我的关注"
+                    android:textColor="@color/black_text_999"
+                    android:textSize="26px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_act_choose_recipient_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

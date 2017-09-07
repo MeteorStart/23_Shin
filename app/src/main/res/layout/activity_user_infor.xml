@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.UserInforActivity">
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/head_imv_act_user_info" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/user_info"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_act_search_topic_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_xiexin"
+                        android:layout_width="match_parent"
+                        android:layout_height="72px"
+                        android:paddingLeft="20px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Ta找的信"
+                        android:textColor="@color/black_text_333"
+                        android:textSize="26px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv_xiexin"
+                        android:background="@color/cut_line_seting"
+                        android:layout_height="1px" />
+
+                    <TextView
+                        android:id="@+id/tv_act_user_info_more1"
+                        android:layout_width="wrap_content"
+                        android:background="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:gravity="center_vertical"
+                        android:text="更多"
+                        android:textColor="@color/black_text_666"
+                        android:textSize="26px"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_act_search_topic_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_act_search_topic_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_act_search_topic_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="72px"
+                        android:paddingLeft="20px"
+                        android:layout_marginTop="10px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Ta等的信"
+                        android:textColor="@color/black_text_333"
+                        android:textSize="26px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tv_act_search_topic_hot"
+                        android:background="@color/cut_line_seting"
+                        android:layout_height="1px" />
+
+                    <TextView
+                        android:id="@+id/tv_act_user_info_more2"
+                        android:layout_width="wrap_content"
+                        android:background="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:gravity="center_vertical"
+                        android:text="更多"
+                        android:textColor="@color/black_text_666"
+                        android:textSize="26px"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_act_search_topic_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imv_act_user_info_back"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="74px"
+        android:src="@drawable/icon_zhaoxin_back" />
+
+    <ImageView
+        android:id="@+id/imv_act_user_info_more"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imv_act_user_info_back"
+        android:layout_marginRight="20px"
+        android:src="@drawable/icon_gerenzhuye_more" />
+
+</RelativeLayout>

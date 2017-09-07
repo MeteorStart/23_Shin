@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_pop_choose_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_pop_choose_map_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="使用以下方式找到路线"
+        android:textColor="#333"
+        android:textSize="30px" />
+
+    <ImageView
+        android:id="@+id/view_pop_choose_map_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20px"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:id="@+id/lay_pop_map_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20px"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/shape_bg_imv_pop_choose_map"
+            android:padding="20px"
+            android:src="@drawable/icon_dianpu_position_baidu" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="百度地图"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <CheckBox
+            android:id="@+id/checkbox_pop_map_baidu"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/view_pop_choose_map_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:id="@+id/lay_pop_map_gaode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20px"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/shape_bg_imv_pop_choose_map"
+            android:padding="20px"
+            android:src="@drawable/icon_dianpu_position_gaode" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="高德地图"
+            android:textColor="@color/black_text_666"
+            android:textSize="30px" />
+
+        <CheckBox
+            android:id="@+id/checkbox_pop_map_gaode"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

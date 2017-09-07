@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_act_demand_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.DemandDetailsActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:id="@+id/imv_act_demand_details_avatar"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    <TextView
+        android:id="@+id/tv_act_demand_details_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:text="用户名"
+        android:textColor="@color/act_main_line"
+        android:textSize="30px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="86px"
+        android:background="@color/cut_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="26px"
+            android:text="Ta等的信"
+            android:textColor="@color/black_text_333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="26px"
+            android:text="创建时间"
+            android:textColor="@color/black_text_999"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_act_demand_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="30px"
+        android:minHeight="200px"
+        android:text="          交友是人们为了摆脱自己单身的生活，交友是人们为了摆脱自己单身的生活，交友是人们为了摆脱自己单身的生活，交友是人们为了摆脱自己单身的生活，"
+        android:textColor="@color/black_text_666"
+        android:textSize="26px" />
+
+    <Button
+        android:id="@+id/btn_act_demand_details_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/select_btn_act_login"
+        android:text="写信给Ta"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32px" />
+</LinearLayout>

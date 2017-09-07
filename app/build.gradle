@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId 'com.xiujichuanmei.a23_haoxin'
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//
+//        }
+//    }
+//    signingConfigs {
+//        release {
+//            keyAlias 'release'
+//            keyPassword '0105088'
+//            storeFile file('23_release.jks')
+//            storePassword '0105088'
+//        }
+//    }
+//
+//    buildTypes {
+//        release {
+//            minifyEnabled true
+//            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+    signingConfigs {
+        release {
+            keyAlias 'release'
+            keyPassword '0105088'
+            storeFile file('23_release.jks')
+            storePassword '0105088'
+//            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debuug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':base-master')
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+}

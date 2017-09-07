@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_pop_choose_map"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="600px"
+        android:layout_height="650px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_bg_pop_scan"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imv_pop_show_scan_avatar"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+            <TextView
+                android:id="@+id/tv_pop_show_scan_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/imv_pop_show_scan_avatar"
+                android:text="用户名"
+                android:textColor="@color/black_text_333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_pop_show_scan_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:text="编号：000000"
+                android:textColor="@color/black_text_999"
+                android:textSize="22px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imv_pop_show_scan_scan"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_scan_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:text="前往预约信件所在店，向商家出示此码"
+            android:textColor="@color/black_text_999"
+            android:textSize="26px" />
+    </LinearLayout>
+</RelativeLayout>

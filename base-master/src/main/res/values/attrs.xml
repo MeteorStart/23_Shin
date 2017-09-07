@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" format="dimension" />
+    </declare-styleable>
+
+    <!-- 带下划线的按钮 -->
+    <declare-styleable name="underLineBtn">
+        <attr name="unCheckedColor" format="reference|color" /><!-- 未选中时文字颜色 -->
+        <attr name="checkedColor" format="reference|color" /><!-- 选中时文字颜色 -->
+        <attr name="unLineColor" format="reference|color" /><!-- 未选中时线颜色 -->
+        <attr name="lineColor" format="reference|color" /><!-- 选中时线颜色 -->
+        <attr name="isChecked" format="boolean" /><!-- 是否选中 -->
+        <attr name="lineHeight" format="dimension" /><!-- 底部线的高度 -->
+        <attr name="lineWight" format="dimension" /><!-- 底部线的宽度 -->
+        <attr name="text" format="string" /><!-- 中间文本内容 -->
+        <attr name="textSize" format="dimension" /><!-- 中间字体大小 -->
+        <attr name="textMarginTop" format="dimension"/><!-- 文字与下划线的间距 -->
+    </declare-styleable>
+
+    <declare-styleable name="PowerfulEditText">
+        <!--功能的类型-->
+        <attr name="funcType">
+            <enum name="normal" value="-1"/>
+            <enum name="canClear" value="0"/>
+            <enum name="canWatchPwd" value="1" />
+        </attr>
+        <!--关闭查看密码的图标-->
+        <attr name="eyeClose" format="reference"/>
+        <!--开启查看密码的图标-->
+        <attr name="eyeOpen" format="reference"/>
+        <!--左侧Drawable的宽度-->
+        <attr name="leftDrawableWidth" format="dimension"/>
+        <!--左侧Drawable的高度-->
+        <attr name="leftDrawableHeight" format="dimension"/>
+        <!--右侧Drawable的宽度-->
+        <attr name="rightDrawableWidth" format="dimension"/>
+        <!--右侧Drawable的高度-->
+        <attr name="rightDrawableHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

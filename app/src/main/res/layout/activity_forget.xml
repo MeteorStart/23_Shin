@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.ForgetActivity">
+
+    <include
+        android:id="@+id/lay_act_forget_top"
+        layout="@layout/act_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_act_forget_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:counterOverflowTextAppearance="@style/errorAppearance">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_forget_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_shoujihao"
+            android:drawablePadding="20px"
+            android:inputType="phone"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="16dp"
+            app:funcType="canClear" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_act_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_password"
+            android:drawablePadding="20px"
+            android:inputType="textPassword"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp"
+            app:eyeClose="@drawable/icon_denglu_mimabukejian"
+            app:eyeOpen="@drawable/icon_denglu_mimakejian"
+            app:funcType="canWatchPwd" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px">
+
+        <EditText
+            android:id="@+id/edit_act_forget_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_denglu_yanzhengma"
+            android:drawablePadding="20px"
+            android:inputType="phone"
+            android:minHeight="80px"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="13dp" />
+
+
+        <com.project.lx.baseproject.widget.TimeButton
+            android:id="@+id/btn_act_forget_time"
+            android:layout_width="140px"
+            android:layout_height="55px"
+            android:layout_alignBottom="@+id/edit_act_sing_in_code"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="18px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/select_btn_act_login"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@drawable/select_btn_text_color_act_login"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_act_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/select_btn_act_login"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="@drawable/select_btn_text_color_act_login"
+        android:textSize="32px" />
+</LinearLayout>

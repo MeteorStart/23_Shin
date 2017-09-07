@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.StoreEnterActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <LinearLayout
+            android:id="@+id/lay_act_store_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家入驻"
+                android:textColor="@color/black_text_333"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="上百万咖啡厅、书吧、特色店、超市便利店等商家已入驻。"
+                android:textColor="@color/black_text_999"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_act_store_enter"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lay_act_store_enter"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lay_act_store_enter"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/shape_bg_btn_item_shap_details"
+            android:drawableLeft="@drawable/icon_wo_shezhi_ruzhu_shenqing"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:text="申请"
+            android:textColor="@color/act_main_line"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="10px"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他合作"
+                android:textColor="@color/black_text_333"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="请联系www.xiujits.com"
+                android:textColor="@color/black_text_999"
+                android:textSize="22px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="fill_vertical"
+            android:lineSpacingExtra="20px"
+            android:text="哈尔滨锈迹文化传媒有限公司\n公司网址：www.xiujits.com\n咨询电话：0451-51068317\n咨询电话：18045178317\n咨询QQ：2102748998"
+            android:textColor="@color/black_text_999"
+            android:textDirection="anyRtl"
+            android:textSize="22px" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:background="@color/cut_line_seting" />
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_scan_logo" />
+    </LinearLayout>
+</LinearLayout>

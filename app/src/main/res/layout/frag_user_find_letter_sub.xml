@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_act_shop_detail_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:text="没有更多数据"
+        android:textColor="@color/black_text_hint"
+        android:textSize="14dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_frag_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@color/white">
+        <!-- 每条item布局  item_frag_user_find_sub -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_frag_user_find_sub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

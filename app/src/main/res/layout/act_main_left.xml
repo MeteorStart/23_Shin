@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/lay_no_login" android:id="@+id/lay_act_main_no_login"  android:visibility="visible" />
+
+    <include layout="@layout/lay_login_in_shop" android:id="@+id/lay_act_main_login_shop" android:visibility="gone"/>
+
+    <include layout="@layout/lay_login_in_user" android:id="@+id/lay_act_main_login_user" android:visibility="gone"/>
+
+</FrameLayout>

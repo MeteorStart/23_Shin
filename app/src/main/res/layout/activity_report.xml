@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.ReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/act_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cut_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="举报"
+                android:textColor="@color/black_text_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_act_report_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:text="用户名"
+                android:textColor="@color/black_text_333"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="的信息"
+                android:textColor="@color/black_text_666"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_act_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="56px"
+            android:background="@drawable/shape_bg_btn_item_shap_details"
+            android:gravity="start"
+            android:hint="请详细填写，真实反馈信息"
+            android:minHeight="400px"
+            android:padding="20px"
+            android:textColor="@color/black_text_333"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_act_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/select_btn_act_login"
+        android:enabled="false"
+        android:text="举报"
+        android:textColor="@drawable/select_btn_text_color_act_login"
+        android:textSize="32px" />
+</LinearLayout>

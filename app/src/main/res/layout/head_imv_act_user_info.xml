@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imv_act_user_info_blur_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imv_act_user_info_avatar"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+        <TextView
+            android:id="@+id/text_act_user_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv_act_user_info_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26px"
+            android:text="用户名"
+            android:textColor="@color/black_text_333"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <com.xiujichuanmei.a23_haoxin.mvp.view.view.AttentionButton
+                android:id="@+id/btn_act_user_info_attention"
+                android:layout_width="140px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_btn_item_shap_details"
+                android:drawableLeft="@drawable/icon_gerenzhuye_guanzhu"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="关注"
+                android:textColor="@color/act_main_line"
+                android:textSize="26px" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/cut_line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_act_user_info_draw_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_btn_item_shap_details"
+                android:drawableLeft="@drawable/icon_dianpu_xiexin"
+                android:paddingLeft="20px"
+                android:drawablePadding="10px"
+                android:text="写信给Ta"
+                android:paddingRight="20px"
+                android:textAllCaps="false"
+                android:textColor="@color/act_main_line"
+                android:textSize="26px" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

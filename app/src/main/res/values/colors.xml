@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c2c2c</color>
+    <color name="colorPrimaryDark">#2c2c2c</color>
+    <color name="colorAccent">#818b56</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="white_30">#30ffffff</color>
+    <color name="white_f8">#f8f8f8</color>
+    <color name="gray">#bbb</color>
+    <color name="gray_9">#999</color>
+    <color name="transparent">#0000</color>
+    <color name="yellow_item_shop_type">#f1c37a</color>
+    <color name="black_text_333">#333333</color>
+    <color name="black_text_666">#666666</color>
+    <color name="black_text_999">#999999</color>
+    <color name="black_text_hint">#c8c8c8</color>
+
+
+    <color name="blue">#1DA1F2</color>
+    <color name="cut_line">#e8e8e8</color>
+    <color name="cut_line_seting">#bebebe</color>
+
+    <color name="act_main_line">#818b56</color>
+    <color name="ral_act_main_line">#35000000</color>
+    <color name="btn_un_clack">#e6efe3</color>
+    <color name="act_main_unline">#ededed</color>
+    <!--友盟-->
+    <color name="umeng_socialize_shareactivity">#D4E0E5</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+
+    <color name="red">#ff0008</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.ChangeUserNameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+
+        <ImageView
+            android:id="@+id/imv_act_top_back"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/icon_zhaoxin_back" />
+
+        <TextView
+            android:id="@+id/text_act_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/act_rite_success"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textColor="@color/black_text_333"
+            android:textSize="26px" />
+
+        <com.project.lx.baseproject.widget.PowerfulEditText
+            android:id="@+id/edit_act_change_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.0"
+            android:background="@color/transparent"
+            android:hint="请输入昵称"
+            android:inputType="text"
+            android:textColor="@color/black_text_333"
+            android:textColorHint="@color/black_text_hint"
+            android:textSize="26px"
+            app:funcType="canClear" />
+    </LinearLayout>
+
+</LinearLayout>

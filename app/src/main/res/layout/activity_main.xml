@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.project.lx.baseproject.widget.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/sliding_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rightPadding="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/act_main_left" />
+
+        <include
+            android:id="@+id/lay_act_main_right_user"
+            layout="@layout/act_main_right_user" />
+    </LinearLayout>
+
+</com.project.lx.baseproject.widget.SlidingMenu>

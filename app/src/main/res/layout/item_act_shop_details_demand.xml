@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 店铺详情页列表Item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imv_act_shop_detail_demand_avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/icon_denglu_touxiang_weidenglu" />
+
+    <LinearLayout
+        android:id="@+id/lay_act_shop_detail_demand"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/imv_act_shop_detail_demand_avatar">
+
+        <TextView
+            android:id="@+id/imv_act_shop_detail_demand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隔壁王小明"
+            android:textColor="@color/black_text_333"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_act_frag_user_wait_start_type"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_dengxin_xuqiu"
+            android:drawablePadding="5dp"
+            android:text="#520告白"
+            android:textColor="@color/yellow_item_shop_type"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_act_shop_detail_demand_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/imv_act_shop_detail_demand_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imv_act_shop_detail_demand_avatar"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="剩余时间"
+            android:textColor="@color/black_text_999"
+            android:textSize="13dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/imv_act_shop_detail_demand_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_xinjian_time"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:background="@drawable/shape_bg_text_item_shap_details"
+            android:padding="5dp"
+            android:text="剩余时间"
+            android:textColor="@color/act_main_line"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/imv_act_shop_detail_demand_write"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_bg_text_item_shap_details"
+            android:drawableLeft="@drawable/icon_dianpu_xiexin"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:padding="5dp"
+            android:text="写信给Ta"
+            android:textColor="@color/act_main_line"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_act_shop_detail_shop_empty"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/black_text_333"
+        android:textSize="15dp" />
+</RelativeLayout>

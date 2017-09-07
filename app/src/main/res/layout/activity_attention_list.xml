@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.AttentionListActivity">
+
+    <include layout="@layout/act_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/cut_line" />
+
+
+    <TextView
+        android:id="@+id/tv_act_shop_detail_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:text="没有更多数据"
+        android:textColor="@color/black_text_hint"
+        android:textSize="14dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_act_main_attention"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- item_choose_recipi_all -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_act_attention_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

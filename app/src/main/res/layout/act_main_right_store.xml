@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_act_main_store_top"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white_f8">
+
+        <ImageView
+            android:id="@+id/imv_act_main_store_my"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/icon_fabu_shouxinren" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信件"
+            android:textColor="@color/black_text_333"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/imv_act_main_store_mes"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_zhaoxin_xinjian" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rel_act_main_store_top"
+        android:background="#bbbbbb" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_act_main_store"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_act_main_store_top"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Item_act_main_store -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_act_main_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1px" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/imv_act_main_store_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40px"
+        android:src="@drawable/icon_shouye_saoyisao" />
+</RelativeLayout>

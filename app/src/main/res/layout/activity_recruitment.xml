@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.xiujichuanmei.a23_haoxin.mvp.view.activity.RecruitmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/act_top" />
+
+        <TextView
+            android:id="@+id/tv_act_recruitment_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="确定"
+            android:textColor="@color/act_main_line"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商家名称"
+            android:textColor="@color/black_text_333"
+            android:textSize="26px" />
+
+        <EditText
+            android:id="@+id/edit_act_recruitment_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/transparent"
+            android:hint="请输入商家名称"
+            android:textColor="@color/black_text_333"
+            android:textColorHint="@color/black_text_999"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商家地址"
+            android:textColor="@color/black_text_333"
+            android:textSize="26px" />
+
+        <EditText
+            android:id="@+id/edit_act_recruitment_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/transparent"
+            android:hint="请输入商家地址"
+            android:textColor="@color/black_text_333"
+            android:textColorHint="@color/black_text_999"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商家电话"
+            android:textColor="@color/black_text_333"
+            android:textSize="26px" />
+
+        <EditText
+            android:id="@+id/edit_act_recruitment_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/transparent"
+            android:hint="请输入商家电话"
+            android:textColor="@color/black_text_333"
+            android:textColorHint="@color/black_text_999"
+            android:textSize="26px" />
+    </LinearLayout>
+
+</LinearLayout>
